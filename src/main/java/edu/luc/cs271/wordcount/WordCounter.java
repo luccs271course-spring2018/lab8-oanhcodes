@@ -13,24 +13,39 @@ public class WordCounter {
   /** Creates a word counter instance based on the given map. */
   public WordCounter(final Map<String, Integer> theMap) {
 
-    // TODO
-    this.theMap = null;
+    // Done
+    this.theMap = theMap;
 
   }
 
   /** Counts the frequencies of all words in the given iterator. */
   public void countWords(final Iterator<String> words) {
 
-    // TODO for each word in the iterator, update the corresponding frequency in the map
+    // Done for each word in the iterator, update the corresponding frequency in the map
+
+    // Get current count for the word
+    // IF the word value is null, give it the default of 1
+    // ELSE increment the value by 1
+
+    while (words.hasNext()) {
+      int count = theMap.get(words.next());
+      if (count == null) {
+        theMap.put((words.next(), 1);
+      } else {
+        theMap.put((words.next(), count + 1);
+      }
+    }
+
     // HINT to do this without a conditional, use the getOrDefault method
+    // Still Need to refactor with the getOrDefault method
 
   }
 
   /** Retrieve the frequency of a particular word. */
   public int getCount(final String word) {
 
-    // TODO
-    return -1;
+    // Done
+    return theMap.get(word);
 
   }
 
