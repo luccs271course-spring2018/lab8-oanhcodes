@@ -40,7 +40,6 @@ public class WordCounter {
 
   /** Retrieve the frequency of a particular word. */
   public int getCount(final String word) {
-
     // Done
     return theMap.get(word);
   }
