@@ -28,12 +28,12 @@ public class WordCounter {
     // ELSE increment the value by 1
 
     while (words.hasNext()) {
-      String word = words.next();
-      int count = theMap.get(word);
+      final String word = words.next();
+      Integer count = theMap.get(word);
       if (count == null) {
-        theMap.put((word, 1);
+        theMap.put(word, 1);
       } else {
-        theMap.put((word, count + 1);
+        theMap.put(word, count + 1);
       }
     }
 
