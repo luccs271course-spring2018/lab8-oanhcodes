@@ -34,11 +34,11 @@ public class Main {
 
     // Collections.sort(List, Comparator);
     Collections.sort(mapList, new DescendingByCount());
-    for (int i = 1; i < 11; i++) {
+    for (int i = 0; i < 10; i++) {
       System.out.println(mapList.get(i).getKey() + " = " + mapList.get(i).getValue());
     }
 
-    // TODO complete this main program
+    // Done complete this main program
     // 1. Done create a WordCounter instance
     // 2. Done use this to count the words in the input
     // 3. Done determine the size of the resulting map
