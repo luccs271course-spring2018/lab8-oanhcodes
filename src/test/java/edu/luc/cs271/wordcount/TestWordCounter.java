@@ -39,6 +39,12 @@ public class TestWordCounter {
     assertEquals(false, fixture.getCounts().isEmpty());
     assertEquals(2, fixture.getCount("asdf"));
     assertEquals(1, fixture.getCount("qwer"));
+    assertEquals(3, fixture.getCounts().size());
+
+    Iterator<String> wordList2 = Arrays.asList("dog", "cat", "dog").iterator();
+    fixture.countWords(wordList2);
+    assertEquals(5, fixture.getCounts().size());
+
     try {
       fixture.getCount("apple");
       fixture.getCount("banana");
