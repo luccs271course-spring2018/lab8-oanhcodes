@@ -2,16 +2,16 @@
 
 #### Top 10 Words in lesmisrables01unkngoog_djvu.txt
 
-1. of = 18012
-2. and = 12845
-3. a = 12449
-4. to = 12449
-5. in = 9386
-6. was = 7788
-7. that = 6601
-8. he = 6202
-9. his = 5529
-10. is = 5506
+1. the = 33278
+2. of = 18012
+3. and = 12845
+4. a = 12449
+5. to = 12449
+6. in = 9386
+7. was = 7788
+8. that = 6601
+9. he = 6202
+10. his = 5529
 
 #### Try using a TreeMap instead of a HashMap. Does this make any difference?
 No, there was no difference when I used a TreeMap instead of a HashMap.
