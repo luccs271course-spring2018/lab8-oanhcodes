@@ -7,7 +7,10 @@ import java.util.Map;
 public class DescendingByCount implements Comparator<Map.Entry<String, Integer>> {
   public int compare(final Map.Entry<String, Integer> l, final Map.Entry<String, Integer> r) {
 
-    // TODO turn this into descending order using the getValue() method on l and r
-    return -1;
+    // Done turn this into descending order using the getValue() method on l and r
+    // -1: Object 1 is less than Object 2
+    // 0: Object 1 equals Object 2
+    // 1: Object 1 is greater than Object 2
+    return r.getValue().compareTo(l.getValue());
   }
 }
